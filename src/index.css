@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+@theme {
+  --color-navy: #0047AB;
+  --color-navy-dark: #003380;
+  --color-navy-light: #1a5cbf;
+  --color-gold: #C8A951;
+  --color-gold-light: #e8d48b;
+  --color-slate-dark: #1a1a1a;
+  --color-slate-medium: #4a4a4a;
+  --color-slate-light: #f8f9fa;
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Video hover effect */
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
